@@ -1,4 +1,4 @@
-baseurl = "https://labsim.io/"
+baseurl = "https://www.labsim.io/"
 canonifyurls = true
 title = "LABSIM"
 theme = "hugo-universal-theme"
