@@ -1,0 +1,93 @@
+baseurl = "https://documentation.labsim.io"
+languageCode = "en-us"
+title = "LABSIM Documentation"
+theme = "hugo-material-docs"
+metadataformat = "yaml"
+canonifyurls = true
+
+# Enable Google Analytics by entering your tracking id
+googleAnalytics = ""
+
+[params]
+
+	# General information
+	author = "LABSIM"
+	description = "A technical documentatuion about the LABSIM Simulation software ecosystem."
+	copyright = "Released under the MIT license"
+
+	# Repository
+	provider = ""
+	repo_url = ""
+
+	version = "v0.1a"
+	logo = "img/logo.png"
+	favicon = "img/favicon.ico"
+
+	permalink = "#"
+
+	# Custom assets
+	custom_css = []
+	custom_js  = []
+
+	# Syntax highlighting theme
+	highlight_css  = "Googlecode"
+
+	[params.palette]
+    	primary = "blue-grey"
+    	accent  = "amber"
+
+        [params.font]
+    	text = "Roboto"
+    	code = "Roboto Mono"
+
+
+[social]
+	twitter = ""
+	github  = "labsim"
+	email   = "labsim.onera@gmail.com"
+
+[[menu.main]]
+	name   = "Welcome"
+	url    = "/"
+	weight = 1
+
+[[menu.main]]
+	name   = "LABSIM"
+	url    = "labsim/"
+	weight = 10
+
+[[menu.main]]
+	name   = "Simulation Software Ecosystem"
+	url    = "simulation-software-ecosystem/"
+	weight = 20
+
+[[menu.main]]
+	name   = "Roadmap"
+	url    = "roadmap/"
+	weight = 30
+
+[[menu.main]]
+	name   = "Titans"
+	url    = "titans/"
+	weight = 40
+
+[[menu.main]]
+	name   = "Olympiens"
+	url    = "olympiens/"
+	weight = 50
+
+[[menu.main]]
+	name   = "Colosses"
+	url    = "colosses/"
+	weight = 60
+
+[[menu.main]]
+	name   = "Main Website"
+	url    = "https://www.labsim.github.io/"
+	weight = 70
+
+[blackfriday]
+	smartypants 	= true
+	fractions 	= true
+	smartDashes 	= true
+	plainIDAnchors 	= true
