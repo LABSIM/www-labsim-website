@@ -1,0 +1,4 @@
+weight: 4
+name: "Resilient"
+icon: "fa fa-copy"
+description: "A carrefully crafted backend mechanism based on RPC framework enables frontend crash recovery & hotplug of every involved simulation model in-line."
