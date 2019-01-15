@@ -1,93 +1,75 @@
-baseurl = "https://documentation.labsim.io"
-languageCode = "en-us"
-title = "LABSIM Documentation"
-theme = "hugo-material-docs"
-metadataformat = "yaml"
-canonifyurls = true
+baseURL = "https://documentation.labsim.io"
+languageCode = "en-US"
+defaultContentLanguage = "en"
 
-# Enable Google Analytics by entering your tracking id
-googleAnalytics = ""
+title = "LABSIM Documentation"
+theme = "hugo-theme-learn"
+themesdir = "themes/"
+metaDataFormat = "yaml"
+defaultContentLanguageInSubdir= true
 
 [params]
 
-	# General information
-	author = "LABSIM"
-	description = "A technical documentatuion about the LABSIM Simulation software ecosystem."
-	copyright = "Released under the MIT license"
+ # Prefix URL to edit current page. Will display an "Edit this page" button on top right hand corner of every page.
+ # Useful to give opportunity to people to create merge request for your doc.
+ # See the config.toml file from this documentation site to have an example.
+ editURL = ""
 
-	# Repository
-	provider = ""
-	repo_url = ""
+ # Author of the site, will be used in meta information
+ author = "Nawfel KINANI"
 
-	version = "v0.1a"
-	logo = "img/logo.png"
-	favicon = "img/favicon.ico"
+ # Description of the site, will be used in meta information
+ description = "LABSIM Doc"
 
-	permalink = "#"
+ # Shows a checkmark for visited pages on the menu
+ showVisitedLinks = false
 
-	# Custom assets
-	custom_css = []
-	custom_js  = []
+ # Disable search function. It will hide search bar
+ disableSearch = false
 
-	# Syntax highlighting theme
-	highlight_css  = "Googlecode"
+ # Javascript and CSS cache are automatically busted when new version of site is generated.
+ # Set this to true to disable this behavior (some proxies don't handle well this optimization)
+ disableAssetsBusting = false
 
-	[params.palette]
-    	primary = "blue-grey"
-    	accent  = "amber"
+ # Set this to true to disable copy-to-clipboard button for inline code.
+ disableInlineCopyToClipBoard = false
 
-        [params.font]
-    	text = "Roboto"
-    	code = "Roboto Mono"
+ # A title for shortcuts in menu is set by default. Set this to true to disable it.
+ disableShortcutsTitle = false
 
+ # When using mulitlingual website, disable the switch language button.
+ disableLanguageSwitchingButton = true
 
-[social]
-	twitter = ""
-	github  = "labsim"
-	email   = "labsim.onera@gmail.com"
+ # Hide breadcrumbs in the header and only show the current page title
+ disableBreadcrumb = false
 
-[[menu.main]]
-	name   = "Welcome"
-	url    = "/"
-	weight = 1
+ # Hide Next and Previous page buttons normally displayed full height beside content
+ disableNextPrev = false
 
-[[menu.main]]
-	name   = "LABSIM"
-	url    = "labsim/"
-	weight = 10
+ # Order sections in menu by "weight" or "title". Default to "weight"
+ ordersectionsby = "weight"
 
-[[menu.main]]
-	name   = "Simulation Software Ecosystem"
-	url    = "simulation-software-ecosystem/"
-	weight = 20
+ # Change default color scheme with a variant one. Can be "red", "blue", "green".
+ themeVariant = "material-design"
 
-[[menu.main]]
-	name   = "Roadmap"
-	url    = "roadmap/"
-	weight = 30
+[outputs]
+home = [ "HTML", "RSS", "JSON"]
 
-[[menu.main]]
-	name   = "Titans"
-	url    = "titans/"
-	weight = 40
+[Languages]
 
-[[menu.main]]
-	name   = "Olympiens"
-	url    = "olympiens/"
-	weight = 50
+[Languages.en]
+title = "LABSIM Documentation"
+weight = 1
+languageName = "English"
 
-[[menu.main]]
-	name   = "Colosses"
-	url    = "colosses/"
-	weight = 60
+[[Languages.en.menu.shortcuts]]
+name = "<i class='fab fa-fw fa-github'></i> Github repo"
+identifier = "ds"
+url = "https://github.com/LABSIM"
+weight = 10
 
-[[menu.main]]
-	name   = "Main Website"
-	url    = "https://www.labsim.github.io/"
-	weight = 70
-
-[blackfriday]
-	smartypants 	= true
-	fractions 	= true
-	smartDashes 	= true
-	plainIDAnchors 	= true
+[[Languages.en.menu.shortcuts]]
+name = "<i class='fas fa-fw fa-bookmark'></i> Main website"
+identifier = "hugodoc"
+url = "https://labsim.io/"
+weight = 20
