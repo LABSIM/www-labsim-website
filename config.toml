@@ -13,13 +13,13 @@ defaultContentLanguageInSubdir= true
  # Prefix URL to edit current page. Will display an "Edit this page" button on top right hand corner of every page.
  # Useful to give opportunity to people to create merge request for your doc.
  # See the config.toml file from this documentation site to have an example.
- editURL = ""
+ editURL = "https://github.com/LABSIM/www-labsim-website/edit/documentation/content/"
 
  # Author of the site, will be used in meta information
  author = "Nawfel KINANI"
 
  # Description of the site, will be used in meta information
- description = "LABSIM Doc"
+ description = "LABSIM Documentation website"
 
  # Shows a checkmark for visited pages on the menu
  showVisitedLinks = false
