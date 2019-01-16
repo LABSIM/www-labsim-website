@@ -14,6 +14,8 @@ This bench stand for **P**rotot**Y**ping & **C**onception of **S**ystems for **H
 
 ![PYSCHEL][1]
 
+---
+
 #### 2. SCHEME
 
 > *"Prototyping bench for innovative interfaces "*
@@ -21,6 +23,8 @@ This bench stand for **P**rotot**Y**ping & **C**onception of **S**ystems for **H
 This bench is composed of a cylindrical 180° immersive display & a single operator station. It is primary used to design/prototype new interaction means & study the subject behavior & cognitive state through bio-physiological metric such as eye-tracking, mo-cap, ECG, EMG, EEG & GSR. Moreover, this bench is the LABSIM hybrid-reality bridge to real-world UAV.   
 
 ![SCHEME][2]
+
+---
 
 #### 3. LIPS
 

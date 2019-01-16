@@ -11,3 +11,5 @@ pre = "<b>2.1. </b>"
 # Basics
 
 Answering the famous *five Ws* and *How* !
+
+{{%expand "Summary" %}} {{% children style="div" depth="999" %}} {{% /expand%}}
