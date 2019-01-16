@@ -7,8 +7,10 @@ chapter = true
 
 # LABSIM Documentation
 
-![Welcome_background](../images/fixed-background.jpg?classes=shadow&width=60pc)
+![Welcome_background][1]
 
 ---
 
 Feel free to explore our documentation by clicking on different section in the left bar or simply navigate by using arrows.
+
+[1]: images/fixed-background.jpg?classes=shadow&width=60pc
