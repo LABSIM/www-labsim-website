@@ -9,6 +9,10 @@ pre = "<b>2. </b>"
 
 ### Chapter 2
 
-# Simulation Software Ecosystem
+# SSE
 
-A more technical point of view because... You know. We do love <i class='fas fa-laptop-code'></i> .
+> *aka.* Simulation Software Ecosystem
+
+A bit more technical... You know. We do love <i class='fas fa-laptop-code'></i>
+
+{{%expand "Summary" %}} {{% children style="div" depth="999" %}} {{% /expand%}}

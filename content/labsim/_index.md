@@ -11,3 +11,5 @@ pre = "<b>1. </b>"
 # LABSIM
 
 General presentation. Improving your <i class='fas fa-graduation-cap'></i> about us.
+
+{{%expand "Summary" %}} {{% children style="div" depth="999" %}} {{% /expand%}}
