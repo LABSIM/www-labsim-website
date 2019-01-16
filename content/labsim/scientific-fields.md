@@ -14,43 +14,43 @@ This is the general representation of the covered scientific fields by the LABSI
 | :---: | :---: | :---: |
 | {{%expand "Distributed Systems" %}}
 
-![distributed_system_main](../../images/png/scientific_fields-2.png?width=80%)
+![distributed_system_main](../../images/png/scientific_fields-2.png?width=90%)
 
 <i class="fas fa-caret-down"></i>
 
-![distributed_system_sub1](../../images/png/scientific_fields-3.png?classes=shadow&width=80%)
+![distributed_system_sub1](../../images/png/scientific_fields-3.png?classes=shadow&width=90%)
 
 <i class="fas fa-caret-down"></i>
 
-![distributed_system_sub2](../../images/png/scientific_fields-4.png?classes=shadow&width=80%)
+![distributed_system_sub2](../../images/png/scientific_fields-4.png?classes=shadow&width=90%)
 
 <i class="fas fa-caret-down"></i>
 
-![distributed_system_sub3](../../images/png/scientific_fields-5.png?width=80%)
+![distributed_system_sub3](../../images/png/scientific_fields-5.png?width=90%)
 
 {{% /expand%}} | {{%expand "Software engineering" %}}
 
-![system_engineering_main](../../images/png/scientific_fields-6.png?width=80%)
+![system_engineering_main](../../images/png/scientific_fields-6.png?width=90%)
 
 <i class="fas fa-caret-down"></i>
 
-![system_engineering_sub1](../../images/png/scientific_fields-7.png?width=80%)
+![system_engineering_sub1](../../images/png/scientific_fields-7.png?width=90%)
 
 {{% /expand%}} | {{%expand "Virtual reality" %}}
 
-![vr_main](../../images/png/scientific_fields-8.png?width=80%)
+![vr_main](../../images/png/scientific_fields-8.png?width=90%)
 
 <i class="fas fa-caret-down"></i>
 
-![vr_sub1](../../images/png/scientific_fields-9.png?classes=shadow&width=80%)
+![vr_sub1](../../images/png/scientific_fields-9.png?classes=shadow&width=90%)
 
 <i class="fas fa-caret-down"></i>
 
-![vr_sub2](../../images/png/scientific_fields-10.png?classes=shadow&width=80%)
+![vr_sub2](../../images/png/scientific_fields-10.png?classes=shadow&width=90%)
 
 <i class="fas fa-caret-down"></i>
 
-![vr_sub3](../../images/png/scientific_fields-11.png?width=80%)
+![vr_sub3](../../images/png/scientific_fields-11.png?width=90%)
 
 {{% /expand%}} |
 
