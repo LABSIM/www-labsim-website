@@ -6,22 +6,111 @@ weight = 31
 
 > *How to allow fast & early conception/evaluation cycle of innovative concept in situ ?*
 
-This was the motivation of the very first development of the LABSIM's Simulation Software Environment. Our answer to solve the *ditto* problematic. Because Research area is a very versatile environment, we start only from this. No requirements at all.
+This was the motivation of the very first development of the LABSIM's Simulation Software Environment (SSE). Our answer to solve the *ditto* problematic. Because Research area is a very versatile environment, we start only from this. No requirements at all.
 
-So we begin by a simple term-by-term analysis of this problematic which will finally lead to a set of requirements to met with our SSE.
+So we began with a representation of the initial workflow, then we've done a simple term-by-term analysis of this problematic which will finally lead to a set of requirements to met with our SSE and ew concluded by an estimation of a *desired* workflow.
 
 *Let's begin*.
 
-#### The entries
+---
 
-{{<mermaid align="left">}}
-graph LR;
-    A[Hard edge] -->|Link text| B(Round edge)
-    B --> C{Decision}
-    C -->|One| D[Result one]
-    C -->|Two| E[Result two]
+#### Initial Workflow
+
+{{<mermaid align="center">}}
+
+graph TD;
+
+  External_0(("fa:fa-users"))
+
+  subgraph ICNA / RFDS
+
+    ICNA_0("Domain Expert")
+    ICNA_1("System Architect")
+    ICNA_2{"fa:fa-cog"}
+    ICNA_3{"fa:fa-graduation-cap"}
+
+    ICNA_0 --> |model| ICNA_2
+    ICNA_1 --> |publish| ICNA_3
+    ICNA_0 --> |publish| ICNA_3
+
+  end
+
+  subgraph LABSIM
+
+    LABSIM_0("fa:fa-keyboard The Team")
+    LABSIM_1["fa:fa-server Interactive Simulation"]
+    LABSIM_2(("fa:fa-database"))
+
+    LABSIM_0 --> LABSIM_1
+    LABSIM_1 ==> |generate| LABSIM_2
+
+  end
+
+  External_0 --> LABSIM_1
+  ICNA_1 -.-> |design experimental protocol| External_0
+  ICNA_2 -.-> |integrate| LABSIM_0
+  ICNA_1 -.-> |compose| LABSIM_0
+  LABSIM_2 -.-> |analyze| ICNA_0
+  LABSIM_2 -.-> |analyze| ICNA_1
+
 {{< /mermaid >}}
 
-We are the LABSIM Team
+---
+
+#### Expected Workflow
+
+{{<mermaid align="center">}}
+
+graph TD;
+
+  External_0(("fa:fa-users"))
+  External_1(("fa:fa-database"))
+
+  subgraph ICNA / RFDS
+
+    ICNA_0("Domain Expert")
+    ICNA_1("System Architect")
+    ICNA_2{"fa:fa-cog"}
+    ICNA_3{"fa:fa-graduation-cap"}
+
+    ICNA_0 --> |model| ICNA_2
+    ICNA_1 --> |publish| ICNA_3
+    ICNA_0 --> |publish| ICNA_3
+
+  end
+
+  subgraph LABSIM
+
+    subgraph SSE
+
+      SSE_0("fa:fa-magic Simulation Composition Pipeline")
+      SSE_1("fa:fa-magic Model Integration Pipeline")
+
+    end
+
+    LABSIM_0("fa:fa-keyboard The Team")
+    LABSIM_1["fa:fa-server Interactive Simulation"]
+    LABSIM_3{"fa:fa-user-cog Actor" }
+    LABSIM_4{"fa:fa-user-graduate Core"}
+
+    LABSIM_0 --> SSE_0
+    LABSIM_0 --> SSE_1
+    SSE_0 ==> |generate| LABSIM_4
+    SSE_1 ==> |generate| LABSIM_3
+    LABSIM_3 --> |catalog| SSE_0
+    LABSIM_3 --> LABSIM_1
+    LABSIM_4 --> LABSIM_1
+
+  end
+
+  External_0 --> LABSIM_1
+  ICNA_1 -.-> |design experimental protocol| External_0
+  ICNA_2 -.-> |integrate| SSE_1
+  ICNA_1 -.-> |compose| SSE_0
+  LABSIM_1 ==> |generate| External_1
+  External_1 -.-> |analyze| ICNA_0
+  External_1 -.-> |analyze| ICNA_1
+
+{{< /mermaid >}}
 
 {{%attachments title="Official presentation" style="grey" pattern=".*(pdf)"/%}}
