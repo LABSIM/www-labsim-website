@@ -8,13 +8,47 @@ weight = 31
 
 This was the motivation of the very first development of the LABSIM's Simulation Software Environment (SSE). Our answer to solve the *ditto* problematic. Because Research area is a very versatile environment, we start only from this. No requirements at all.
 
-So we began with a representation of the initial workflow, then we've done a simple term-by-term analysis of this problematic which will finally lead to a set of requirements to met with our SSE and ew concluded by an estimation of a *desired* workflow.
+So we began with a simple term-by-term analysis of this problematic to establish a set of requirements to met with our SSE, then we've done an graphical modeling of the initial workflow to identify bottleneck which has will finally and an estimation of a *desired* workflow.
 
 *Let's begin*.
 
 ---
 
-#### Initial Workflow
+### Term-by-term analysis
+
+
+> *How to allow __fast & early conception__/evaluation cycle of innovative concept in situ ?*
+
+- rapid system prototyping ;
+- cheap & affordable solution => *software simulation*.
+
+> *How to allow __fast & early__ conception/__evaluation__ cycle of innovative concept in situ ?*
+
+- to evaluate something, we need to be representative &/or immersive enough ;
+- it also mean that we will probably have to handle a wide range of heterogeneous sensors ;
+- to evaluate something we must guarantee data consistency.
+
+> *How to allow fast & early conception/evaluation __cycle__ of innovative concept in situ ?*
+
+- reliability ;
+- repeatability.
+
+> *How to allow fast & early conception/evaluation cycle of __innovative concept__ in situ ?*
+
+- innovation arises from domain specific expert ;
+- innovation could also emerge from a blend, a fusion of various scientific domain ;
+- we do computer sciences so we should leverage this aspect from users => *focus on key competencies (reminder: initials conditions)*
+
+> *How to allow fast & early conception/evaluation cycle of innovative concept __in situ__ ?*
+
+- HiL (Human in the Loop) interactive simulation => *human centered design approach* ;
+- generally speaking, Human does not lag. that said we should focus on performance with soft real-time requirements => ~100Hz ;
+- human centered + computer science = VR (Virtual Reality) principles !
+- because we are an in-house ONERA's lab, by "Human" we mean : "Pilot", "UAV/UGV/ATC operator", ...
+
+---
+
+### Initial Workflow
 
 {{<mermaid align="center">}}
 
@@ -39,7 +73,7 @@ graph TD;
 
     LABSIM_0("fa:fa-keyboard The Team")
     LABSIM_1["fa:fa-server Interactive Simulation"]
-    LABSIM_2(("fa:fa-database"))
+    LABSIM_2{"fa:fa-database"}
 
     LABSIM_0 --> LABSIM_1
     LABSIM_1 ==> |generate| LABSIM_2
@@ -57,7 +91,7 @@ graph TD;
 
 ---
 
-#### Expected Workflow
+### Expected Workflow
 
 {{<mermaid align="center">}}
 
